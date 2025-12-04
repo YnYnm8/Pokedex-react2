@@ -32,7 +32,7 @@ export default function App() {
 
   // 🔹 アプリが最初に読み込まれたときだけ API からデータを取得する
   useEffect(() => {
-    fetch(`https://pokebuildapi.fr/api/v1/pokemon/limit/100`)
+    fetch(`https://pokebuildapi.fr/api/v1/pokemon`)
       .then((res) => res.json())
       .then((pokemons: PokemonApi[]) => {
         // 取得したポケモンデータをステートに保存
