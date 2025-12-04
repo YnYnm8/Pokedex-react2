@@ -1,0 +1,69 @@
+body {
+    background-color: red;
+}
+
+* {
+    border: solid 1px black;
+    margin: 0;
+    padding: 0;
+
+}
+
+image {
+    width: 100%;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+
+}
+
+.container-left {
+    grid-column: 1;
+    overflow-y: auto;
+    width: 80%;
+}
+
+.container-right {
+    grid-column: 2;
+    text-align: center;
+    color: antiquewhite;
+   
+}
+
+.pokemon {
+    background-color: rgb(32, 29, 29);
+    color: bisque;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-radius: 15px;
+padding: 5px;
+}
+
+.pokemonlist{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+.pokemondetail p{
+    font-size: 1.2rem;
+}
+.detail-img{
+    width: 75%;
+}
+.type {
+
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 20px; */
+}
+
+.type img {
+    width: 60px;
+
+}
